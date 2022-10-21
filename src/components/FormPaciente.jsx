@@ -1,17 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Form, Button, Col, Row, Card } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { v4 as uuidv4 } from "uuid";
 import GridCitas from "./GridCitas";
 
 const FormPaciente = () => {
-  const [citas, setCitas] = useState([]);
+  const citasLS = JSON.parse(localStorage.getItem('citasVet')) || []
+  const [citas, setCitas] = useState(citasLS);
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
   } = useForm();
+
+  useEffect(()=>{
+    localStorage.setItem('citasVet',JSON.stringify(citas));
+  })
 
   const onSubmit = (data) => {
     data.id = uuidv4();
