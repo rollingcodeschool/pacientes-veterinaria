@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pacientes-veterinaria/static/css/main.2c64a71e.css",
+    "main.js": "/pacientes-veterinaria/static/js/main.0337bb90.js",
+    "index.html": "/pacientes-veterinaria/index.html",
+    "main.2c64a71e.css.map": "/pacientes-veterinaria/static/css/main.2c64a71e.css.map",
+    "main.0337bb90.js.map": "/pacientes-veterinaria/static/js/main.0337bb90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c64a71e.css",
+    "static/js/main.0337bb90.js"
+  ]
+}
